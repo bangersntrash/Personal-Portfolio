@@ -1,0 +1,127 @@
+/* ===== GLOBAL THEME ===== */
+
+:root {
+  --bg: #0f172a;
+  --bg-light: #1e293b;
+  --primary: #3b82f6;
+  --text: #e2e8f0;
+  --heading: #f8fafc;
+  --border: #334155;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 4rem;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background: linear-gradient(to bottom, #0f172a, #020617);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: var(--heading);
+  font-weight: 600;
+}
+
+p {
+  color: #cbd5f5;
+}
+
+/* Layout */
+.section {
+  padding: 4rem 1.5rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Buttons */
+.btn {
+  background: var(--primary);
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Cards */
+.card {
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+}
+
+.navbar {
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  transition: all 0.3s ease;
+  padding: 8px;
+  text-align: justify;
+  
+}
+
+.navbar a {
+  padding: 4px 10px; 
+  display: inline-block; 
+  text-decoration: none;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid var(--border);
+  background: #020617;
+  padding: 2rem 0;
+}
+
+.footer a {
+  padding: 4px 10px; 
+  display: inline-block; 
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #3b82f6;
+}
+
+/* Inputs */
+input, textarea {
+  background: #020617;
+  border: 1px solid var(--border);
+  padding: 0.6rem;
+  border-radius: 6px;
+  color: white;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* Links */
+a {
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary);
+}
